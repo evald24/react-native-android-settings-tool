@@ -1,0 +1,24 @@
+{
+  "name": "react-native-android-settings-library",
+  "version": "0.0.1",
+  "description": "React Native Android setting tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+	"homepage": "https://github.com/Evald24/react-native-android-settings-tool#readme",
+	"bugs": {
+		"url": "https://github.com/Evald24/react-native-android-settings-tool/issues"
+	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Evald24/react-native-android-settings-tool"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "settings"
+  ],
+	"author": "Evald24 <evaldsmalyakov@mail.ru> (https://github.com/Evald24)",
+  "license": "ISC"
+}
