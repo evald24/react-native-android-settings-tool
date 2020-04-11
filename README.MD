@@ -1,14 +1,14 @@
 <div align="center">
   <h1>react-native-android-settings-tool</h1>
-  <a href="#Description">Description</a>
+  <a href="#description">Description</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#Installation">Installation</a>
+  <a href="#installation">Installation</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#Usage">Usage</a>
+  <a href="#usage">Usage</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#Expamles">Expamles</a>
+  <a href="#expamles">Expamles</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#Docs">Docs</a>
+  <a href="#docs">Docs</a>
 </div>
 
 ![NPM version](https://img.shields.io/npm/v/react-native-android-settings-tool?color=green) ![NPM version](https://img.shields.io/npm/l/react-native-android-settings-tool?color=green)
@@ -37,6 +37,8 @@ RNAndroidSettings.ACTION_SETTINGS(); // Open the main settings screen.
 Show notification settings:
 
 ```ts
+import RNAndroidSettings from "react-native-android-settings-tool";
+
 //In some cases, a matching Activity may not exist, so ensure you safeguard against this
 try {
   // "null" is your app
@@ -51,6 +53,8 @@ try {
 Show notification channel settings:
 
 ```ts
+import RNAndroidSettings from "react-native-android-settings-tool";
+
 //In some cases, a matching Activity may not exist, so ensure you safeguard against this
 try {
   // "null" is your app
@@ -79,7 +83,7 @@ try {
 
 ## Docs
 
-###Functions
+### Functions
 
 | Functions                                                           | Description                                                                                             |                                                           Read more                                                           |
 | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------: |
@@ -142,7 +146,7 @@ try {
 | `ACTION_WIRELESS_SETTINGS();`                                       | Show settings to allow configuration of wireless controls such as Wi-Fi, Bluetooth and Mobile networks. |              [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_WIRELESS_SETTINGS)               |
 | `ACTION_ZEN_MODE_PRIORITY_SETTINGS();`                              | Show Zen Mode (aka Do Not Disturb) priority configuration settings.                                     |          [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_ZEN_MODE_PRIORITY_SETTINGS)          |
 
-###Parameters
+### Parameters
 
 | Name        | Type               | Description                                  |
 | :---------- | :----------------- | :------------------------------------------- |
