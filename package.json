@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-settings-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native Android setting tool",
   "main": "index.js",
   "scripts": {

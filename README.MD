@@ -27,9 +27,9 @@
 Require the `react-native-android-settings-tool` module.
 
 ```ts
-import RNAndroidSettings from "react-native-android-settings-tool";
+import RNAndroidSettingsTool from "react-native-android-settings-tool";
 
-RNAndroidSettings.ACTION_SETTINGS(); // Open the main settings screen.
+RNAndroidSettingsTool.ACTION_SETTINGS(); // Open the main settings screen.
 ```
 
 ## Expamles
@@ -37,14 +37,14 @@ RNAndroidSettings.ACTION_SETTINGS(); // Open the main settings screen.
 Show notification settings:
 
 ```ts
-import RNAndroidSettings from "react-native-android-settings-tool";
+import RNAndroidSettingsTool from "react-native-android-settings-tool";
 
 //In some cases, a matching Activity may not exist, so ensure you safeguard against this
 try {
   // "null" is your app
-  RNAndroidSettings.ACTION_APP_NOTIFICATION_SETTINGS(null); // Show notification settings for your app.
+  RNAndroidSettingsTool.ACTION_APP_NOTIFICATION_SETTINGS(null); // Show notification settings for your app.
   // or other app (ex. Facebook)
-  RNAndroidSettings.ACTION_APP_NOTIFICATION_SETTINGS("com.facebook.katana"); // Show notification settings for another package name "com.facebook.katana" NotificationChannel with id 123.
+  RNAndroidSettingsTool.ACTION_APP_NOTIFICATION_SETTINGS("com.facebook.katana"); // Show notification settings for another package name "com.facebook.katana" NotificationChannel with id 123.
 } catch (e) {
   // your code
 }
@@ -53,14 +53,14 @@ try {
 Show notification channel settings:
 
 ```ts
-import RNAndroidSettings from "react-native-android-settings-tool";
+import RNAndroidSettingsTool from "react-native-android-settings-tool";
 
 //In some cases, a matching Activity may not exist, so ensure you safeguard against this
 try {
   // "null" is your app
-  RNAndroidSettings.ACTION_CHANNEL_NOTIFICATION_SETTINGS(null, "123"); // Show notification settings for your app NotificationChannel with id 123.
+  RNAndroidSettingsTool.ACTION_CHANNEL_NOTIFICATION_SETTINGS(null, "123"); // Show notification settings for your app NotificationChannel with id 123.
   // or other app (ex. Instagram)
-  RNAndroidSettings.ACTION_CHANNEL_NOTIFICATION_SETTINGS("com.instagram.android", "123"); // Show notification settings for another package name "com.instagram.android" NotificationChannel with id 123.
+  RNAndroidSettingsTool.ACTION_CHANNEL_NOTIFICATION_SETTINGS("com.instagram.android", "123"); // Show notification settings for another package name "com.instagram.android" NotificationChannel with id 123.
 } catch (e) {
   // your code
 }
@@ -69,13 +69,13 @@ try {
 Show application details screen:
 
 ```ts
-import RNAndroidSettings from "react-native-android-settings-tool";
+import RNAndroidSettingsTool from "react-native-android-settings-tool";
 
 try {
   // "null" is your app
-  RNAndroidSettings.ACTION_APPLICATION_DETAILS_SETTINGS(null); // Show screen of details about your application.
+  RNAndroidSettingsTool.ACTION_APPLICATION_DETAILS_SETTINGS(null); // Show screen of details about your application.
   // or other app (ex. Google Chrome)
-  RNAndroidSettings.ACTION_APPLICATION_DETAILS_SETTINGS("com.android.chrome"); // Show screen details of about for another package name "com.android.chrome".
+  RNAndroidSettingsTool.ACTION_APPLICATION_DETAILS_SETTINGS("com.android.chrome"); // Show screen details of about for another package name "com.android.chrome".
 } catch (e) {
   // your code
 }
@@ -104,7 +104,7 @@ try {
 | `ACTION_FINGERPRINT_ENROLL();`                                      | Show settings to enroll fingerprints, and setup PIN/Pattern/Pass if necessary.                          |              [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_FINGERPRINT_ENROLL)              |
 | `ACTION_HARD_KEYBOARD_SETTINGS();`                                  | Show settings to configure the hardware keyboard.                                                       |            [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_HARD_KEYBOARD_SETTINGS)            |
 | `ACTION_HOME_SETTINGS();`                                           | Show Home selection settings.                                                                           |                [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_HOME_SETTINGS)                 |
-| `ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS(packageName);` | Show screen for controlling background data restrictions for a your application.                        | [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS) |
+| `ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS(packageName);` | Show screen for controlling background data restrictions for a particular application.                        | [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS) |
 | `ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS();`                    | Show screen for controlling which apps can ignore battery optimizations.                                |     [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)     |
 | `ACTION_INPUT_METHOD_SETTINGS();`                                   | Show settings to configure input methods, in particular allowing the user to enable input methods.      |            [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_INPUT_METHOD_SETTINGS)             |
 | `ACTION_INPUT_METHOD_SUBTYPE_SETTINGS();`                           | Show settings to enable/disable input method subtypes.                                                  |        [Link](https://developer.android.com/reference/android/provider/Settings#ACTION_INPUT_METHOD_SUBTYPE_SETTINGS)         |
